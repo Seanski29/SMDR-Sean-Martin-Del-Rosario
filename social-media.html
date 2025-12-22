@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Handler - Sean Martin Del Rosario</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="icon.jpg">
+    <style>
+        :root {
+            --primary: #10b981;
+            --secondary: #1e293b;
+        }
+        
+        body {
+            background: #0a0a0a;
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .container-wide {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+        
+        .skill-tag {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-lg z-50 py-4">
+        <div class="container-wide">
+            <div class="flex justify-between items-center">
+                <a href="main.html" class="text-xl font-bold text-gradient">SMDR</a>
+                
+                <div class="flex items-center gap-6">
+                    <a href="main.html" class="text-sm hover:text-green-400">Home</a>
+                    <a href="it-resume.html" class="text-sm hover:text-green-400">IT Resume</a>
+                    <a href="video-editor.html" class="text-sm hover:text-green-400">Video Editor</a>
+                    <a href="main.html#contact" class="btn-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <div class="container-wide">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <a href="main.html" class="inline-flex items-center gap-2 text-green-400 hover:text-green-300 mb-8">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Back to Portfolio
+                </a>
+                <h1 class="text-4xl md:text-6xl font-bold text-gradient mb-4">Social Media Handler</h1>
+                <p class="text-xl text-gray-400">Content Strategist & Digital Media Specialist</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <div class="glass-card p-8">
+                        <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+                            <i data-lucide="contact" class="w-5 h-5 text-green-500"></i>
+                            Contact Information
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-4 h-4 text-gray-500"></i>
+                                <div>
+                                    <div class="text-sm text-gray-500">Phone</div>
+                                    <div class="font-medium">+63 99965816503</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="mail" class="w-4 h-4 text-gray-500"></i>
+                                <div>
+                                    <div class="text-sm text-gray-500">Email</div>
+                                    <div class="font-medium">seanmdelrosario@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-gray-500"></i>
+                                <div>
+                                    <div class="text-sm text-gray-500">Address</div>
+                                    <div class="font-medium">604 Pilahan East, Sabang, Lipa City Batangas</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="linkedin" class="w-4 h-4 text-gray-500"></i>
+                                <div>
+                                    <div class="text-sm text-gray-500">LinkedIn</div>
+                                    <a href="https://linkedin.com/in/seandelrosario/" class="font-medium text-green-400 hover:text-green-300">
+                                        linkedin.com/in/seandelrosario
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8">
+                        <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-green-500"></i>
+                            Social Media Tools
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                <span class="font-medium">Adobe Premiere</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                <span class="font-medium">Adobe Lightroom</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                <span class="font-medium">CapCut</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                                <span class="font-medium">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8">
+                        <h3 class="text-lg font-bold mb-4">Other Resumes</h3>
+                        <div class="space-y-3">
+                            <a href="it-resume.html" class="flex items-center justify-between p-3 hover:bg-gray-800/50 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="monitor" class="w-5 h-5 text-blue-500"></i>
+                                    <span>IT Support</span>
+                                </div>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                            <a href="video-editor.html" class="flex items-center justify-between p-3 hover:bg-gray-800/50 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="video" class="w-5 h-5 text-purple-500"></i>
+                                    <span>Video Editor</span>
+                                </div>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-2 space-y-8">
+                    <!-- Summary -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="user" class="w-6 h-6 text-green-500"></i>
+                            Professional Summary
+                        </h3>
+                        <p class="text-gray-300">
+                            Detail-oriented and creative video editor with a passion for storytelling and visual design. 
+                            Seeking to contribute to a dynamic media or creative team where I can apply my editing skills 
+                            to produce impactful, high-quality content that engages audiences and meets brand goals.
+                        </p>
+                    </div>
+
+                    <!-- Social Media Experience -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                            <i data-lucide="share-2" class="w-6 h-6 text-green-500"></i>
+                            Social Media Experience
+                        </h3>
+                        
+                        <div class="space-y-8">
+                            <div class="border-l-2 border-green-500 pl-4">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div>
+                                        <h4 class="text-xl font-bold">YouTube Content Creator & Editor</h4>
+                                        <p class="text-green-400">The REI Method</p>
+                                    </div>
+                                    <span class="text-sm bg-green-900/30 px-3 py-1 rounded-full">2022 - 2023</span>
+                                </div>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Created and edited YouTube content focused on Singapore real estate economy</li>
+                                    <li>Achieved 300% subscriber growth in 8 months through strategic content planning</li>
+                                    <li>Increased average video views from 100 to 1,000+ through audience engagement strategies</li>
+                                    <li>Collaborated with team to develop content calendar and upload strategy</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-2 border-green-500 pl-4">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div>
+                                        <h4 class="text-xl font-bold">Multimedia & Digital Presence Manager</h4>
+                                        <p class="text-green-400">Divino Amor - Redemptorist Lipa</p>
+                                    </div>
+                                    <span class="text-sm bg-green-900/30 px-3 py-1 rounded-full">2024 - Present</span>
+                                </div>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Managed digital presence through photography and live broadcasting</li>
+                                    <li>Operated multi-camera live broadcasts using vMix for major events</li>
+                                    <li>Maintained consistent and engaging digital content across platforms</li>
+                                    <li>Documented events for social media sharing and community engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Skills -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                            <i data-lucide="bar-chart-3" class="w-6 h-6 text-green-500"></i>
+                            Social Media Skills
+                        </h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-green-400">Content Creation</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Video Editing</span>
+                                    <span class="skill-tag">Photo Editing</span>
+                                    <span class="skill-tag">Graphic Design</span>
+                                    <span class="skill-tag">Content Planning</span>
+                                    <span class="skill-tag">Storytelling</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-green-400">Platform Management</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">YouTube</span>
+                                    <span class="skill-tag">Live Streaming</span>
+                                    <span class="skill-tag">Audience Engagement</span>
+                                    <span class="skill-tag">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-bold text-lg mb-3 text-green-400">Soft Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Willingness to Learn</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Multitasking</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Time Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-green-500"></i>
+                            Education
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-bold">Bachelor of Science in Information Technology</h4>
+                                    <span class="text-sm bg-green-900/30 px-3 py-1 rounded-full">2023 - Ongoing</span>
+                                </div>
+                                <p class="text-green-400">Batangas State University - Lipa Campus</p>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-bold">Science, Technology, Engineering, and Mathematics (STEM)</h4>
+                                    <span class="text-sm bg-green-900/30 px-3 py-1 rounded-full">2017 - 2023</span>
+                                </div>
+                                <p class="text-green-400">Canossa Academy Lipa City</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Interests -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="heart" class="w-6 h-6 text-green-500"></i>
+                            Personal Interests
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            My diverse interests help me bring unique perspectives to social media content creation and strategy.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Travelling</span>
+                            <span class="skill-tag">Building Computers</span>
+                            <span class="skill-tag">Coding</span>
+                            <span class="skill-tag">Video Editing</span>
+                            <span class="skill-tag">Cooking</span>
+                            <span class="skill-tag">Working Out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12 pt-12 border-t border-gray-800">
+                <h3 class="text-2xl font-bold mb-4">Ready to Boost Your Social Media Presence?</h3>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Let's create engaging content that resonates with your audience and grows your brand.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:seanmdelrosario@gmail.com" class="btn-primary">
+                        <i data-lucide="mail" class="w-4 h-4 inline mr-2"></i>
+                        Discuss Strategy
+                    </a>
+                    <a href="main.html#contact" class="px-6 py-3 border border-gray-700 rounded-lg hover:border-green-500">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container-wide">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600">© 2024 Sean Martin Del Rosario - Social Media Specialist</p>
+                <div class="flex gap-6">
+                    <a href="main.html" class="text-sm text-gray-400 hover:text-white">Portfolio</a>
+                    <a href="it-resume.html" class="text-sm text-gray-400 hover:text-white">IT Resume</a>
+                    <a href="video-editor.html" class="text-sm text-gray-400 hover:text-white">Video Editor</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

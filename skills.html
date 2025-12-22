@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills - Sean Martin Del Rosario</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icon.jpg">
+    <style>
+        .glass-card { background: rgba(15, 15, 15, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-gradient { background: linear-gradient(to right, #fff, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-category { transition: all 0.3s ease; }
+        .skill-category:hover { transform: translateY(-5px); border-color: #3b82f6; }
+    </style>
+</head>
+<body class="bg-[#050505] text-gray-200 font-sans antialiased">
+    <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
+        <div class="glass-card px-8 py-3 rounded-2xl flex gap-10 items-center">
+            <a href="main.html" class="text-sm font-bold tracking-widest text-blue-500">SMDR</a>
+            <div class="h-4 w-px bg-gray-800"></div>
+            <a href="resume.html" class="text-xs uppercase tracking-widest hover:text-blue-400 transition-colors">Resume</a>
+            <a href="skills.html" class="text-xs uppercase tracking-widest hover:text-blue-400 transition-colors active-nav">Skills</a>
+            <a href="education.html" class="text-xs uppercase tracking-widest hover:text-blue-400 transition-colors">Education</a>
+            <a href="hobbies.html" class="text-xs uppercase tracking-widest hover:text-blue-400 transition-colors">Hobbies</a>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-6xl mx-auto px-6 lg:px-12 pt-32 pb-20">
+        <header class="mb-12">
+            <a href="resume.html" class="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Resume
+            </a>
+            <h1 class="text-5xl md:text-7xl font-black text-gradient leading-tight mb-4">Technical Skills</h1>
+            <p class="text-xl text-gray-400">My technical proficiencies and programming skills</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div id="programming" class="glass-card skill-category p-8 rounded-2xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-3 bg-blue-500/10 rounded-xl">
+                        <i data-lucide="code-2" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Programming Languages</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-center justify-between py-2 border-b border-gray-800">
+                        <span>HTML5/CSS</span>
+                        <span class="text-blue-400 font-mono">Advanced</span>
+                    </li>
+                    <li class="flex items-center justify-between py-2 border-b border-gray-800">
+                        <span>JavaScript</span>
+                        <span class="text-blue-400 font-mono">Intermediate</span>
+                    </li>
+                    <li class="flex items-center justify-between py-2 border-b border-gray-800">
+                        <span>Java</span>
+                        <span class="text-blue-400 font-mono">Intermediate</span>
+                    </li>
+                    <li class="flex items-center justify-between py-2 border-b border-gray-800">
+                        <span>C++</span>
+                        <span class="text-blue-400 font-mono">Intermediate</span>
+                    </li>
+                    <li class="flex items-center justify-between py-2 border-b border-gray-800">
+                        <span>PHP</span>
+                        <span class="text-blue-400 font-mono">Intermediate</span>
+                    </li>
+                    <li class="flex items-center justify-between py-2">
+                        <span>Python</span>
+                        <span class="text-blue-400 font-mono">Basic</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="webdev" class="glass-card skill-category p-8 rounded-2xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-3 bg-blue-500/10 rounded-xl">
+                        <i data-lucide="globe" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Web Development</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>Frontend Development</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>Responsive Design</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>UI/UX Principles</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>Cross-browser Compatibility</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="database" class="glass-card skill-category p-8 rounded-2xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-3 bg-blue-500/10 rounded-xl">
+                        <i data-lucide="database" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Database Management</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>MySQL</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>Database Design</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>SQL Queries</span>
+                    </li>
+                    <li class="flex items-center gap-3 py-2">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span>Data Normalization</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                <i data-lucide="zap" class="w-6 h-6 text-blue-500"></i> Soft Skills & Professional Attributes
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="users" class="w-5 h-5 text-blue-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold mb-1">Team Collaboration</h4>
+                            <p class="text-gray-400 text-sm">Work efficiently in team environments, contributing to collective goals while supporting colleagues.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="brain" class="w-5 h-5 text-blue-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold mb-1">Problem Solving</h4>
+                            <p class="text-gray-400 text-sm">Analytical approach to troubleshooting and developing effective solutions for technical challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="clock" class="w-5 h-5 text-blue-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold mb-1">Time Management</h4>
+                            <p class="text-gray-400 text-sm">Prioritize tasks effectively and meet deadlines while maintaining quality standards.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="refresh-cw" class="w-5 h-5 text-blue-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold mb-1">Adaptability</h4>
+                            <p class="text-gray-400 text-sm">Quick learner with willingness to adapt to new technologies and methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-gray-900 bg-black/50">
+        <div class="max-w-6xl mx-auto px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <p class="text-gray-600 text-sm">© 2024 Sean Martin Del Rosario</p>
+            <div class="flex gap-8">
+                <a href="main.html" class="text-xs font-mono hover:text-blue-500 transition-colors">HOME</a>
+                <a href="resume.html" class="text-xs font-mono hover:text-blue-500 transition-colors">RESUME</a>
+                <a href="education.html" class="text-xs font-mono hover:text-blue-500 transition-colors">EDUCATION</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
